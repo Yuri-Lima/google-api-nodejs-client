@@ -269,6 +269,10 @@ export namespace contactcenterinsights_v1 {
      * Required. The parent resource to export data from.
      */
     parent?: string | null;
+    /**
+     * Options for what to do if the destination table already exists.
+     */
+    writeDisposition?: string | null;
   }
   /**
    * A BigQuery Table Reference.
@@ -1111,6 +1115,10 @@ export namespace contactcenterinsights_v1 {
      * Required. The parent resource to export data from.
      */
     parent?: string | null;
+    /**
+     * Options for what to do if the destination table already exists.
+     */
+    writeDisposition?: string | null;
   }
   /**
    * A BigQuery Table Reference.
@@ -2287,7 +2295,7 @@ export namespace contactcenterinsights_v1 {
      *   // Do the magic
      *   const res =
      *     await contactcenterinsights.projects.locations.conversations.create({
-     *       // A unique ID for the new conversation. This ID will become the final component of the conversation's resource name. If no ID is specified, a server-generated ID will be used. This value should be 4-64 characters and must match the regular expression /^[a-z0-9-]{4,64\}$/. Valid characters are /a-z-/
+     *       // A unique ID for the new conversation. This ID will become the final component of the conversation's resource name. If no ID is specified, a server-generated ID will be used. This value should be 4-64 characters and must match the regular expression `^[a-z0-9-]{4,64\}$`. Valid characters are `a-z-`
      *       conversationId: 'placeholder-value',
      *       // Required. The parent resource of the conversation.
      *       parent: 'projects/my-project/locations/my-location',
@@ -3075,7 +3083,7 @@ export namespace contactcenterinsights_v1 {
   export interface Params$Resource$Projects$Locations$Conversations$Create
     extends StandardParameters {
     /**
-     * A unique ID for the new conversation. This ID will become the final component of the conversation's resource name. If no ID is specified, a server-generated ID will be used. This value should be 4-64 characters and must match the regular expression /^[a-z0-9-]{4,64\}$/. Valid characters are /a-z-/
+     * A unique ID for the new conversation. This ID will become the final component of the conversation's resource name. If no ID is specified, a server-generated ID will be used. This value should be 4-64 characters and must match the regular expression `^[a-z0-9-]{4,64\}$`. Valid characters are `a-z-`
      */
     conversationId?: string;
     /**
@@ -3826,7 +3834,8 @@ export namespace contactcenterinsights_v1 {
      *         //   "bigQueryDestination": {},
      *         //   "filter": "my_filter",
      *         //   "kmsKey": "my_kmsKey",
-     *         //   "parent": "my_parent"
+     *         //   "parent": "my_parent",
+     *         //   "writeDisposition": "my_writeDisposition"
      *         // }
      *       },
      *     });
