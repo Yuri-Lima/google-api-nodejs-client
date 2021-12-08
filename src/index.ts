@@ -65,6 +65,8 @@ export {assuredworkloads_v1} from './apis/assuredworkloads/v1';
 export {assuredworkloads_v1beta1} from './apis/assuredworkloads/v1beta1';
 export {authorizedbuyersmarketplace_v1} from './apis/authorizedbuyersmarketplace/v1';
 export {baremetalsolution_v1} from './apis/baremetalsolution/v1';
+export {baremetalsolution_v1alpha1} from './apis/baremetalsolution/v1alpha1';
+export {baremetalsolution_v2} from './apis/baremetalsolution/v2';
 export {bigquery_v2} from './apis/bigquery/v2';
 export {bigqueryconnection_v1beta1} from './apis/bigqueryconnection/v1beta1';
 export {bigquerydatatransfer_v1} from './apis/bigquerydatatransfer/v1';
