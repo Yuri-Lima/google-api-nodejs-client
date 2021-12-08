@@ -135,6 +135,10 @@ export namespace vmmigration_v1 {
     migratingVm?: string | null;
   }
   /**
+   * Response message for 'AddGroupMigration' request.
+   */
+  export interface Schema$AddGroupMigrationResponse {}
+  /**
    * AppliedLicense holds the license data returned by adaptation module report.
    */
   export interface Schema$AppliedLicense {
@@ -152,9 +156,17 @@ export namespace vmmigration_v1 {
    */
   export interface Schema$CancelCloneJobRequest {}
   /**
+   * Response message for 'CancelCloneJob' request.
+   */
+  export interface Schema$CancelCloneJobResponse {}
+  /**
    * Request message for 'CancelCutoverJob' request.
    */
   export interface Schema$CancelCutoverJobRequest {}
+  /**
+   * Response message for 'CancelCutoverJob' request.
+   */
+  export interface Schema$CancelCutoverJobResponse {}
   /**
    * The request message for Operations.CancelOperation.
    */
@@ -450,6 +462,10 @@ export namespace vmmigration_v1 {
    * Request message for 'FinalizeMigration' request.
    */
   export interface Schema$FinalizeMigrationRequest {}
+  /**
+   * Response message for 'FinalizeMigration' request.
+   */
+  export interface Schema$FinalizeMigrationResponse {}
   /**
    * Describes message for 'Group' resource. The Group is a collections of several MigratingVms.
    */
@@ -870,6 +886,10 @@ export namespace vmmigration_v1 {
    */
   export interface Schema$PauseMigrationRequest {}
   /**
+   * Response message for 'PauseMigration' request.
+   */
+  export interface Schema$PauseMigrationResponse {}
+  /**
    * Request message for 'RemoveMigration' request.
    */
   export interface Schema$RemoveGroupMigrationRequest {
@@ -878,6 +898,10 @@ export namespace vmmigration_v1 {
      */
     migratingVm?: string | null;
   }
+  /**
+   * Response message for 'RemoveMigration' request.
+   */
+  export interface Schema$RemoveGroupMigrationResponse {}
   /**
    * ReplicationCycle contains information about the current replication cycle status.
    */
@@ -904,6 +928,10 @@ export namespace vmmigration_v1 {
    * Request message for 'ResumeMigration' request.
    */
   export interface Schema$ResumeMigrationRequest {}
+  /**
+   * Response message for 'ResumeMigration' request.
+   */
+  export interface Schema$ResumeMigrationResponse {}
   /**
    * A policy for scheduling replications.
    */
@@ -967,6 +995,10 @@ export namespace vmmigration_v1 {
    * Request message for 'StartMigrationRequest' request.
    */
   export interface Schema$StartMigrationRequest {}
+  /**
+   * Response message for 'StartMigration' request.
+   */
+  export interface Schema$StartMigrationResponse {}
   /**
    * The `Status` type defines a logical error model that is suitable for different programming environments, including REST APIs and RPC APIs. It is used by [gRPC](https://github.com/grpc). Each `Status` message contains three pieces of data: error code, error message, and error details. You can find out more about this error model and how to work with it in the [API Design Guide](https://cloud.google.com/apis/design/errors).
    */

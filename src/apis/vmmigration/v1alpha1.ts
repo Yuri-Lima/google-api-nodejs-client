@@ -1111,7 +1111,7 @@ export namespace vmmigration_v1alpha1 {
      */
     networkTags?: string[] | null;
     /**
-     * The project in which to create the VM.
+     * Output only. The project in which to create the VM.
      */
     project?: string | null;
     /**
